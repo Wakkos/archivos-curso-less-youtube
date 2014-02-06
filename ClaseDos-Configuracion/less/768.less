@@ -1,0 +1,102 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* 768 =================================================== */
+
+// 1. ROOT 					==============================
+body {
+	.max-width;
+	position: relative;
+}
+// 2. TYPOGRAPHY 			==============================
+.h1home {
+	.font-size(10);
+	color: @grey;
+}
+// 3. COLOUR 				==============================
+// 4. TEXTURE 				==============================
+// 5. ELEMENTS 				==============================
+// 6. LAYOUT 				==============================
+.iconnav {
+	left: 0;
+	right: 0;
+	top:0;
+	border-left: 1px solid @lightgrey;
+	border-right: 1px solid @lightgrey;
+	background-color: rgba(250,250,250,0.95);
+	position: fixed;
+	text-align: right;
+	background-image: url(img/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: 10%;
+	background-position: left center;
+	span {
+		width: auto;
+		margin: 0 @gutterwidth;
+		text-align: center;
+		display: inline-block;
+		a:link.home, a:visited.home {
+			font-size: .8em;
+		}
+	}
+}
+
+.mainheader {
+	overflow: hidden;
+	img {
+		width: 20%;
+
+	}
+}
+.info {
+	p {
+		padding: @gutterwidth / 2;
+		.font-size(12);
+		margin-bottom: 0;
+	}
+	header {
+		h3 {
+			margin-bottom : 0; 
+			font-weight: 700;
+		}
+	}
+}
+.resumed {
+	max-width: 660px;
+	margin: (@gutterwidth * 4) auto;
+	.clearfix;
+	clear: both;
+}
+.footer-nav {
+	ul{
+		li {
+			float: left;
+			width: 20%;
+			list-style-type: none;
+			.font-size(14);
+		}
+	}
+}
+.single {
+	clear:both;
+	margin-top: @gutterwidth * 5;
+}
+article.bio {
+	
+	img {
+		margin:0 0 0 (@gutterwidth / 2);
+		float: right;
+		
+	}
+}
+
+// 7. VENDOR-SPECIFIC 		==============================
+// 8. MODERNIZR 			==============================
+// 9. TEMPLATE SPECIFICS 	==============================

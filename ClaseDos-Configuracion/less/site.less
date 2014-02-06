@@ -1,0 +1,366 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* Page =================================================== */
+
+// 1. ROOT 					==============================
+
+@-webkit-viewport { 
+width : device-width; }
+
+@-moz-viewport { 
+width : device-width; }
+
+@-ms-viewport { 
+width : device-width; }
+
+@-o-viewport { 
+width : device-width; }
+
+@viewport { 
+width : device-width; }
+
+html {
+background : @bodycolor; 
+font-size : 100%;
+-webkit-overflow-scrolling : touch; 
+-webkit-tap-highlight-color : lighten(@basecolor, 75%); 
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+body { 
+margin : 0;
+padding : 0;
+width : 100%;
+background-color : transparent;
+font-family : @basefont;
+.font-size();
+font-weight: 400;
+line-height : @baselineheight;
+color : @textcolor; }
+
+
+.mainheader {
+	width: 100%;
+	margin: 0 auto (@gutterwidth * 2);
+	text-align: center; 
+	img {
+		width: 40%;
+		margin: 0 auto (@gutterwidth);
+	}
+}
+.info {
+	footer {
+		text-align: right;
+		padding-right: @gutterwidth;
+		a:link, a:visited {
+			.font-size(12);
+			text-transform: uppercase;
+			.btn;
+			&::after {
+				content: "\f105";
+				font-family: icomoon;
+				margin-left: .5em;
+			}
+		}
+	}
+}
+section {
+	margin-bottom: @gutterwidth * 2;
+}
+[role="navigation"] {
+	width: 100%;
+	.clearfix;
+	background-color: @lightergrey;
+	overflow: hidden;
+	padding: @gutterwidth / 2;
+	border-bottom: 1px solid @lightgrey;
+	margin-bottom: @gutterwidth;
+	font-size: 1.5em;
+	span {
+		width: 17%;
+		text-align: center;
+		display: inline-block;
+	}
+
+	ul{
+		li {
+			background-color: transparent;
+			width: 33.3333%;
+			&.current-menu-item {
+				background-color: @compcolor;
+				a:link, a:visited {
+					color: @white;
+				}
+			}
+		}
+	}
+	.next {
+			a::before {
+				font-family: "icomoon";
+				content: "\f105";
+				display: inline-block;
+				color: @compcolor;
+			}
+		}
+		.previous {
+			a::before {
+				font-family: "icomoon";
+				content: "\f104";
+				display: inline-block;
+				color: @compcolor;
+			}
+		}
+
+	 	a:link.minus, a:visited.minus{
+
+			&::before {
+	 		content: "-";
+	 		font-family: "icomoon";
+	 		display: inline-block;
+	 		}
+	 	}
+
+	 	a:link.plus, a:visited.plus{
+			&::before {
+	 		content: "+";
+	 		font-family: "icomoon";
+	 		display: inline-block;
+	 		}
+	 	}
+	 	a:link.home, a:visited.home{
+			&::before {
+	 		content: "\f02b";
+	 		font-family: "icomoon";
+	 		display: inline-block;
+	 		}
+	 	}
+	 	.twitter {
+	 		&::before {
+	 			content: "\f099";
+		 		font-family: "icomoon";
+		 		display: inline-block;
+	 		}
+	 	}
+	 	
+	 	.home {
+	 		&::before {
+	 			content: "\21b8";
+		 		font-family: "icomoon";
+		 		display: inline-block;
+	 		}
+	 	}
+}
+.resumed {
+
+	.articles {
+		position: relative;
+		padding :(@gutterwidth / 2) @gutterwidth (@gutterwidth / 4) (@gutterwidth * 2); 
+		border-bottom: 1px solid @lightgrey;
+		p {
+			.font-size(10);
+			color: @grey;
+		}
+		footer {
+			bottom: @gutterwidth / 4;
+		}
+		&::before {
+			content: "";
+			font-family: "icomoon";
+			font-size: 1em;
+			color: @lightgrey;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			padding: (@gutterwidth / 2) 0 0 0;
+			text-align: center;
+			width: (@gutterwidth * 2);
+		}
+		&.blog::before {
+			content: "\f130";
+		}
+		&.tweet::before {
+			content: "\f333";
+		}
+	}
+}
+
+	.articles {
+		padding: 0 @gutterwidth;
+	}
+
+
+//Header Single.php
+
+
+.single {
+	padding: 0 (@gutterwidth / 2);
+	border-bottom: 1px solid @lightgrey;
+	word-wrap: break-word;
+	article {
+		header {
+			margin-bottom: @gutterwidth;
+			border-bottom: 1px solid @lightgrey;
+			h1, .h1 {
+				margin: 0;
+			}
+		}
+	}
+}
+.comentarios {
+	padding: 0 (@gutterwidth / 2);
+	word-wrap: break-word;
+	p {
+		.font-size(11);
+	}
+	h4 {
+		margin-bottom:0;
+		font-weight: 700;
+		.font-size(12);
+	}
+	.commentmetadata {
+		a:link, a:visited {
+			.font-size(11)
+		}
+	}
+	.photo {
+		float: left;
+		margin-right: @gutterwidth / 4;
+		background-color: @lightgrey;
+		padding: @gutterwidth / 4;
+	}
+	.comment {
+		border-bottom: 1px solid @lightgrey;
+	}
+}
+
+[role="contentinfo"] {
+	background-color: @lightergrey;
+	overflow: hidden;
+	padding: @gutterwidth / 2;
+	border-top: 1px solid @lightgrey;
+	text-align: center;
+	line-height: @baselineheight / 2;
+	 p{
+	 	line-height: 1em;
+	 }
+
+}
+
+//  Nav container styles
+.footer-nav {
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+		text-decoration: none;
+		position: relative;
+		.font-size(16);
+		text-transform : capitalize;
+		letter-spacing: 1px;
+		padding: .6em .3em .6em 2.3em;
+		font-family: @basefont;
+		border: @white;
+			&::before {
+				content: "";
+				font-family: "icomoon";
+				position: absolute;
+				left: 0;
+				top:0;
+				bottom: 0;
+				-webkit-box-shadow : 1px 0 0 rgba(0,0,0,0.2), 2px 0 0px rgba(255,255,255,0.2);
+				-moz-box-shadow : 1px 0 0 rgba(0,0,0,0.2), 2px 0 0px rgba(255,255,255,0.2);
+				box-shadow : 1px 0 0 rgba(0,0,0,0.2), 2px 0 0px rgba(255,255,255,0.2);
+				width: 2em;
+				text-align: center;
+				vertical-align: middle;
+				padding-top: .5em;
+				color: @white;
+			}
+
+			&.blog{
+				background-color: lighten(@compcolor,0);
+				&::before {
+					content: "\e000";
+				}
+
+			}
+			&.us{
+				background-color: lighten(@compcolor,5);
+				&::before {
+					content: "\f13f";
+				}
+			}
+			&.twitter{
+				background-color: lighten(@compcolor,10);
+				&::before {
+					content: "\f099";
+				}
+			}
+			&.cursos{
+				background-color: lighten(@compcolor,15);
+				&::before {
+					content: "\e001";
+				}
+			}
+			&.portfolio{
+				background-color: lighten(@compcolor,20);
+				&::before {
+					content: "\e004";
+				}
+				
+			}
+		}
+	}
+	a:visited, a:link {
+				color: @white;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+article.bio {
+	padding: @gutterwidth (@gutterwidth / 3);
+	img {
+		margin: 0 auto (@gutterwidth / 2);
+		background-color: @white;
+		padding: .5em;
+		.box-shadow(0 0 2px @black;);
+		.rotate(1deg);
+		display: block;
+		
+	}
+	ul{
+		margin: 0 0 1.5em 6px;
+		li {
+			font-family: @basefont;
+			list-style-type: disc;
+		}
+	}
+}
+/* ==|==La magia de las alineaciones de las imágenes en el editor de WP  ======================================== */
+
+img.alignright {float:right;margin: -70px 0 1em 1em;}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto;margin-right: auto;margin-top: 20px;margin-bottom: 50px;}
+a img.alignright {float:right; margin:-65px 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+img#wpstats {
+     display: none;
+}
+// 2. TYPOGRAPHY 			==============================
+// 3. COLOUR 				==============================
+// 4. TEXTURE 				==============================
+// 5. ELEMENTS 				==============================
+// 6. LAYOUT 				==============================
+// 7. VENDOR-SPECIFIC 		==============================
+// 8. MODERNIZR 			==============================
+// 9. TEMPLATE SPECIFICS 	==============================

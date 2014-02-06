@@ -1,0 +1,47 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Code/Design: Daniel Martínez
+  Site:http://coolvillage.es 
+  Twitter: @Wakkos
+  Location: Mostly, Twitter.
+
+  Concepts/Illustrations: Andrea Nogués
+  Site:http://coolvillage.es 
+  Twitter: @madhatter_lady
+  Location: Gibraltar & Spain
+
+  Fun & Entertainment:
+  Totoro & Stimpy, cats.
+
+
+/* SITE */
+  Standards: HTML5, CSS3, Wordpress 
+  Components: 320andUp
+  Software: SublimeText 2.0, LESS, Photoshop, Illustrator and minor tools for design like Ghostapp, Edge Inspect, Codekit, Opera Mobile Emulator and many more.           
+
+
+                                    
+                              !         !          
+                             ! !       ! !          
+                            ! . !     ! . !          
+                               ^^^^^^^^^ ^            
+                             ^             ^          
+                           ^  (0)       (0)  ^       
+                          ^        ""         ^       
+                         ^   ***************    ^     
+                       ^   *                 *   ^    
+                      ^   *   /\   /\   /\    *    ^   
+                     ^   *                     *    ^
+                    ^   *   /\   /\   /\   /\   *    ^
+                   ^   *                         *    ^
+                   ^  *                           *   ^
+                   ^  *                           *   ^
+                    ^ *                           *  ^  
+                     ^*                           * ^ 
+                      ^ *                        * ^
+                      ^  *                      *  ^
+                        ^  *       ) (         * ^
+                            ^^^^^^^^ ^^^^^^^^^ 

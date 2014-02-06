@@ -1,0 +1,22 @@
+
+body {
+  padding: @margen;
+  margin: 0;
+  background-color: @basecolor;
+}
+
+article {
+  width: 48%;
+  background-color: @secondarycolor;
+  background-image: url("@{imgpath}/bg_image.png");
+  float: left;
+  padding:(@margen / 2) (@margen / 3) @margen (@margen / 4);
+  margin-top: @margen;
+}
+article:first-child {
+  margin-right: 1%;
+}
+article:last-child {
+  margin-left: 1%;
+}
+
