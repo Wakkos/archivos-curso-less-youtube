@@ -1,0 +1,15 @@
+p {
+  font-family: Helvetica, Arial, Verdana;
+  font-size: 1em;
+  color: #222222;
+}
+p .highlight {
+  color: orange;
+}
+p.small {
+  font-size: .8em;
+}
+p.small::after {
+  content: " leer mas";
+  color: orange;
+}

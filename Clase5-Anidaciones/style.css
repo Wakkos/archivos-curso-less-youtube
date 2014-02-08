@@ -1,0 +1,26 @@
+h1 {
+  color: blue;
+}
+article {
+  background-color: olive;
+}
+article header {
+  font-size: 1.5em;
+}
+/* Anidaciones LESS */
+article {
+  background-color: olive;
+}
+article header {
+  font-size: 1.5em;
+}
+/* MALAS PRÁCTICAS */body nav ul li a {
+  color: orange;
+}
+/* POSIBLE MANERA CORRECTA */
+nav li a {
+  color: orange;
+}
+#iddelul a {
+  color: orange;
+}
